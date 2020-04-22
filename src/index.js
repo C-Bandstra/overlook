@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import $ from 'jquery';
 import moment from 'moment'
 import './css/base.scss';
@@ -112,8 +111,6 @@ function validateSearch() {
     let rooms = data.user.findBookingsRoom(data.hotel.searchRooms(date), data.roomData);
     data.roomSearch = rooms;
     dom.displaySearchedRooms(rooms);
-  } else {
-    console.log('Please select a future date to search for rooms')
   }
 }
 
