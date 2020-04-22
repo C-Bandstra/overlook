@@ -3,7 +3,7 @@
 
 ## Contributors
 
-**Charlie Bandstra
+Charlie Bandstra
 
 ## Setup
 
