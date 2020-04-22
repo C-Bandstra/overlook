@@ -1,0 +1,62 @@
+.login-page {
+  height: 100%;
+  width: 100%;
+
+  .login-main {
+    @include flex(row, center, center);
+    background-color: $light-grey;
+    color: $dark-grey;
+    height: 85%;
+    width: 100%;
+
+    section {
+      @include flex(column, center, center);
+      background-color: $white;
+      border: 1px solid $dark-grey;
+      border-radius: 10px;
+      height: 90%;
+      width: 35%;
+    }
+  }
+}
+
+.login-form {
+  @include flex(column, flex-start, center);
+  height: 70%;
+  width: 75%;
+
+  div {
+    @include flex(column, center, flex-start);
+    height: 25%;
+    width: 75%;
+  }
+}
+
+.username-input,
+.password-input {
+  align-self: flex-start;
+  border: 1px solid $dark-grey;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 400;
+  height: 30%;
+  padding: 1.5%;
+  width: 100%;
+}
+
+.password-input {
+  -webkit-text-security: disc;
+}
+
+.sign-in-btn {
+  align-self: center;
+  background-color: $blue;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  font-size: 16px;
+  height: 12%;
+  margin-left: 4px;
+  margin-top: 8%;
+  width: 77%;
+}

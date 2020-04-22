@@ -1,0 +1,35 @@
+.nav {
+  @include flex(column, flex-start, stretch);
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+
+  .nav-top {
+    background-color: $dark-grey;
+    border-bottom: 4px solid $blue;
+    border-right: 4px solid $blue;
+    height: 18%;
+    width: 100%;
+  }
+
+  .nav-bottom {
+    @include flex(column, flex-start, center);
+    border-right: 4px solid $blue;
+    border-top: 4px solid $blue;
+    background-color: $dark-grey;
+    color: $white;
+    height: 88%;
+    width: 100%;
+  }
+}
+
+.nav-title {
+  align-self: center;
+  color: $blue;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 4%;
+  margin-top: 4%;
+}
