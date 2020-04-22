@@ -1,0 +1,236 @@
+.customer-page,
+.manager-page {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+.manager-main,
+.customer-main {
+  @include flex(column, flex-start, center);
+  height: 100%;
+  width: 85%;
+}
+
+.customer-container {
+  @include flex(row, center, center);
+  background-color: #E8E8E8;
+  border: 4px solid $blue;
+  flex-wrap: wrap;
+  height: 84%;
+  overflow-y: scroll;
+  width: 90%;
+}
+
+.earned-container,
+.spent-container,
+.percentage-container {
+  @include flex(row, center, center);
+  background-color: $blue;
+  border: 3px solid $dark-grey;
+  box-shadow: 4px 4px 2px $light-grey;
+  color: $white;
+  font-size: 1em;
+  height: 20%;
+  width: 50%;
+}
+
+.type-title {
+  margin-top: 20%
+}
+
+.percentage-booked,
+.available-rooms,
+.earned-title,
+.spent-title {
+  margin: 0px;
+  width: 90%;
+}
+
+.hotel-info-container {
+  background-color: $dark-grey;
+  border: 3px solid $blue;
+  box-shadow: 4px 4px 2px $light-grey;
+  color: $white;
+  font-size: 16px;
+  height: 40%;
+  padding: 4%;
+  width: 70%;
+}
+
+.customer-left,
+.customer-right {
+  @include flex(row, space-around, center);
+  background-color: $white;
+  border: 2px solid $dark-grey;
+  flex-wrap: wrap;
+  height: 90%;
+  margin: 1%;
+  overflow-y: scroll;
+  width: 46%;
+}
+
+.customer-info {
+  @include flex(row, space-around, stretch);
+  background-color: $white;
+  border: 2px solid $dark-grey;
+  flex-wrap: wrap;
+  height: 90%;
+  margin: 1%;
+  overflow-y: scroll;
+  width: 75%;
+}
+
+.room-card {
+  @include flex(column, flex-start, center);
+  background-color: $light-grey;
+  border: 3px solid $blue;
+  height: 60%;
+  margin: 3%;
+  width: 80%;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.booking-info {
+  background-color: $light-grey;
+  margin: 5%;
+  width: 60%;
+  padding: 5%;
+  border: 2px solid $blue;
+}
+
+.info-container {
+  @include flex(column, space-around, center);
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  width: 95%;
+}
+
+.room-img {
+  border: 2px solid $white;
+  width: 100%;
+}
+
+.room-info {
+  @include flex(column, flex-start, stretch);
+}
+
+.info-button {
+  background-color: $blue;
+  border: 2px solid $dark-grey;
+  border-radius: 5px;
+  color: $white;
+  font-size: 1em;
+  height: 15%;
+  width: 40%;
+}
+
+.greeting-container {
+  @include flex(row, center, stretch);
+  height: 8.5%;
+  width: 100%;
+}
+
+.greeting,
+.customer-greeting {
+  @include flex(row, center, stretch);
+  font-size: 2em;
+  margin: 0%;
+  padding: 1%;
+  width: 88%;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.manager-form,
+.customer-form {
+  @include flex(column, flex-start, center);
+  color: $white;
+  height: 100%;
+  width: 95%;
+}
+
+.date-input {
+  font-size: 14px;
+  height: 4%;
+  padding-left: 10px;
+  width: 80%;
+}
+
+.room-type {
+  display: flex;
+  height: 20%;
+  margin-left: 1%;
+  width: 100%;
+}
+
+.find-title {
+  font-size: 1.25em;
+}
+
+.type-name {
+  margin-left: 5%;
+}
+
+.checkboxes {
+  height: 20%;
+  width: 90%;
+}
+
+.sign-out-btn,
+.search-btn,
+.filter-btn,
+.user-search-btn {
+  @include flex(row, center, center);
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  height: 5%;
+  width: 60%;
+
+  &:hover,
+  .sign-out-btn {
+    cursor: pointer;
+    background-color: $white;
+    box-shadow: 2px 2px 2px;
+    color: $black;
+    transform: scale(1.05);
+  }
+}
+
+.sign-out-btn {
+  margin-top: 60%;
+}
+
+.manager-form,
+.search-btn {
+  margin-top: 5%;
+}
+
+.search-title {
+  margin-bottom: 5%;
+  margin-top: 20%;
+}
+
+.name-title {
+  align-self: flex-start;
+  margin-left: 11%;
+}
+
+.guest-name {
+  font-size: 14px;
+  height: 4%;
+  margin-bottom: 6%;
+  padding-left: 10px;
+  width: 80%;
+}
