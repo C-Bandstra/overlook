@@ -3,3 +3,10 @@ $light-grey: #D3D3D3;
 $blue: #355ebe;
 $dark-grey: #393a3d;
 $black: black;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align
+}
