@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import $ from 'jquery';
 import moment from 'moment'
 import './css/base.scss';
@@ -45,9 +46,9 @@ function getImage(rooms) {
   return rooms
 }
 
-function createData(arr, file) {
+function createData(arr, File) {
   let data = arr.map(data => {
-    return new file(data, createDate());
+    return new File(data, createDate());
   });
   return data
 }

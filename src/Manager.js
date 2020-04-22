@@ -38,8 +38,9 @@ class Manager {
 
   getTodayRevenue() {
     this.getBookedPercentage() 
-    let total = this.todaysBookings.reduce((acc , book) => {
-      acc += this.rooms.find(room => book.roomNumber === room.number).costPerNight;
+    let total = this.todaysBookings.reduce((acc, book) => {
+      acc += this.rooms.find(room => book.roomNumber === room.number)
+        .costPerNight;
       return acc
     }, 0)
     dom.displayManagerEarned(Number(total.toFixed(2)));

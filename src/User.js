@@ -32,7 +32,8 @@ class User {
     bookings.forEach(booking => {
       let today = Date.parse(this.date);
       let bookingDate = Date.parse(booking.date);
-      today - bookingDate > 0 ? this.pastBookings.push(booking) : this.futureBookings.push(booking);
+      today - bookingDate > 0 ?
+        this.pastBookings.push(booking) : this.futureBookings.push(booking);
     })
     let pastRooms = this.findBookingsRoom(this.pastBookings, rooms);
     let futureRooms = this.findBookingsRoom(this.futureBookings, rooms);

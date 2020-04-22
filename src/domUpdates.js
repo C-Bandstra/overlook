@@ -33,7 +33,8 @@ let dom = {
   },
 
   displayBookedPercentage(percentage) {
-    $('.percentage-booked').text(`${percentage}% of the rooms have been booked today`)
+    $('.percentage-booked')
+      .text(`${percentage}% of the rooms have been booked today`)
   },
 
   displayUserBookings(bookings, rooms) {
@@ -62,7 +63,8 @@ let dom = {
       <h3>${user.name}</h3>
       <h4>Money Spent: $${user.spent}</h4>
     </div>`);
-    $('.customer-info').append(`<div class="booking-container"><h3>Bookings</h3></div>`)
+    $('.customer-info')
+      .append(`<div class="booking-container"><h3>Bookings</h3></div>`)
     this.displayManagerBookings(user.futureBookings)
     this.displayManagerBookings(user.pastBookings)
   },
