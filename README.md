@@ -12,12 +12,12 @@ To install, clone the repository and enter the following into the terminal to cl
 npm install
 ```
 
-To start the server run 
+To start the server run:
 ```bash
 npm start
 ```
 
-In your browser type
+In your browser, type:
 ```bash
 http://localhost:8080/
 ```
