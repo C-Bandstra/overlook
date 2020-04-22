@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>HotelBook</title>
+    <title>Overlook</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-    <h1>HotelBook</h1>
+    <section class="active login-page">
+    <h1>Overlook</h1>
     <main class="login-main">
       <section class="login-container">
         <h3 class="login-title">Sign In</h3>
-        <p class="status message">Please select your login status</p>
-        <form action="" class="user-status">
-          <button type="button" class="status-btn manager-btn">Manager</button>
-          <button type="button" class="status-btn customer-btn">Customer</button>
-        </form>
         <form action="" class="login-form">
           <div class="username-container">
             <p class="username title">User ID</p>
             <input type="text" class="username-input">
           </div>
-          <div class="username-container">
+          <div class="password-container">
             <p class="password-title">Password</p>
             <input type="text" class="password-input">
           </div>
@@ -28,56 +23,101 @@
         </form>
       </section>
     </main>
-    <!-- <nav class="nav customer-nav">
-      <div class="nav-top">
+  </section>
 
-      </div>
-      <p class="nav-title">HotelBook</p>
-      <div class="nav-bottom">
-        <form action="" class="find-form">
-          <p class="find-title">Find Room</p>
-          <p class="date-title">Date</p>
-          <input placeholder="yyyy/mm/dd" type="text" class="date-input">
-          <p class="type-title">Room Type</p>
-          <div action="" class="room-type">
-            <input type="checkbox" class="type">
-            <label for="type" class="type-name single">Single</label>
-          </div>
-          <div action="" class="room-type">
-            <input type="checkbox" class="type">
-            <label for="type" class="type-name junior">Junior Suite</label>
-          </div>
-          <div action="" class="room-type">
-            <input type="checkbox" class="type">
-            <label for="type" class="type-name suite">Suite</label>
-          </div>
-          <div action="" class="room-type">
-            <input type="checkbox" class="type">
-            <label for="type" class="type-name res-suite">Residential Suite</label>
-          </div>
-          <button type="button" class="search-btn">Search</button>
-          <button type="button" class="sign-out-btn">Sign Out</button>
-        </form>
-      </div>
-    </nav>
+    <section class="inactive customer-page">
+      <nav class="nav customer-nav">
+        <div class="nav-top">
+        </div>
+        <p class="nav-title">Overlook</p>
+        <div class="nav-bottom">
+          <form action="" class="customer-form">
+            <p class="find-title">Find Room</p>
+            <p class="date-title">Date</p>
+            <input class="date-pick" placeholder="yyyy/mm/dd" type="date" class="date-input">
+            <button type="button" class="search-btn">Search</button>
+            <p class="type-title">Room Type</p>
+            <section class="checkboxes">
+              <div action="" class="room-type">
+                <input value="single room" class="checkbox single-check" type="checkbox" class="type">
+                <label for="type" class="type-name single">Single</label>
+              </div>
+              <div action="" class="room-type">
+                <input value="junior suite" class="checkbox junior-check" type="checkbox" class="type">
+                <label for="type" class="type-name junior">Junior Suite</label>
+              </div>
+              <div action="" class="room-type">
+                <input value="suite" class="checkbox suite-check" type="checkbox" class="type">
+                <label for="type" class="type-name suite">Suite</label>
+              </div>
+              <div action="" class="room-type">
+                <input value="residential suite" class="checkbox res-check"type="checkbox" class="type">
+                <label for="type" class="type-name res-suite">Residential Suite</label>
+              </div>
+          </section>
+            <button disabled type="button" class="filter-btn">Filter</button>
+            <button type="button" class="sign-out-btn">Sign Out</button>
+          </form>
+        </div>
+      </nav>
+      <main class="customer-main">
+        <header class="greeting-container">
+          <p class="customer-greeting"></p>
+        </header>
+        <section class="customer-container">
+          <section class="customer-left">
+            <div class="spent-container">
+              <p class="spent-title"></p>
+            </div>
+            <div class="hotel-info-container">
+              <p class="info-title">Check out our available rooms by doing a room search to the left!</p>
+              <p class="other-info">If you want to filter the searched rooms by room type, Please search for rooms
+                 on a future date and then you will be able to filter more specifically.
+              </p>
+              <p class="other-info">Please only select future dates or todays date. Dates from the past are invalid</p>
+            </div>
+          </section>
+          <section class="customer-right">              
+          </section>
+       </section>
+      </main>
+    </section>
 
-    <main class="customer-main">
-    </main> -->
-
-    <!-- <nav class="nav manager-nav">
-      <div class="nav-top">
-      </div>
-      <p class="nav-title">HotelBook</p>
-      <div class="nav-bottom">
-        <form action="" class="manager-form">
-          <p class="search-title">Search Guest</p>
-          <p class="name-title">Name</p>
-          <input type="text" class="guest-name">
-          <button type="button" class="search-btn">Search</button>
-        </form>
-      </div>
-    </nav> -->
-
-    <!-- Do not include the index.js or main.bundle.js file here - it is done automatically by the webpack server -->
+    <section class="inactive manager-page">
+      <nav class="nav manager-nav">
+        <div class="nav-top">
+        </div>
+        <p class="nav-title">Overlook</p>
+        <div class="nav-bottom">
+          <form action="" class="manager-form">
+            <p class="search-title">Search Guest</p>
+            <p class="name-title">Name</p>
+            <input type="text" class="guest-name" placeholder="Insert user ID">
+            <button type="button" class="user-search-btn">Search</button>
+            <button type="button" class="sign-out-btn">Sign Out</button>
+          </form>
+        </div>
+      </nav>
+      <section class="manager-main">
+        <header class="greeting-container">
+          <p class="manager-greeting"></p>
+        </header>
+        <section class="customer-container">
+          <section class="customer-left">
+            <div class="earned-container">
+              <p class="earned-title"></p>
+            </div>
+            <div class="earned-container">
+              <p class="available-rooms"></p>
+            </div>
+            <div class="percentage-container">
+              <p class="percentage-booked"></p>
+            </div>
+          </section>
+          <section class="customer-right">              
+          </section>
+       </section>
+      </section>
+    </section>
   </body>
 </html>
