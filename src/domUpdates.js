@@ -29,6 +29,7 @@ let dom = {
   },
 
   displayCustomerSpent(spent) {
+    console.log(spent)
     $('.spent-title').text(`You have spent $${spent} on rooms`)
   },
 

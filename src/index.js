@@ -33,6 +33,9 @@ function instantiate(users, rooms, bookings) {
   data.manager = new Manager('Charlie', data);
   data.date = createDate()
   data.hotel = new Hotel(data);
+  console.log(data.userData)
+  $('.username-input').val('customer3')
+  $('.password-input').val('overlook2020')
   getImage(data.roomData);
 }
 
